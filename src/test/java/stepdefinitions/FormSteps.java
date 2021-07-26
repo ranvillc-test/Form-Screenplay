@@ -27,7 +27,6 @@ public class FormSteps {
 	@Given("^the user (.*) is in the home page$")
 	public void the_user_Rafael_is_in_the_home_page(String nombreActor) {
 	    // Write code here that turns the phrase above into concrete actions
-		System.out.println("Primer Paso");
 		this.nombreActor=nombreActor;
 		theActorCalled(nombreActor).attemptsTo(Open.browserOn(homePage));
 	    
@@ -37,7 +36,6 @@ public class FormSteps {
 	@When("^the user enters name (.*) and email (.*)$")
 	public void the_user_enters_name_Rafale_and_email_rafael_prueba_com(String name, String email) {
 	    // Write code here that turns the phrase above into concrete actions
-		System.out.println("Primer Segundo paso");
 		theActorCalled(nombreActor).attemptsTo(FormTask.sendForm(name, email));
 	    
 	}
