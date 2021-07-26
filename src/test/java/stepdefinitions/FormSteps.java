@@ -37,6 +37,7 @@ public class FormSteps {
 	@When("^the user enters name (.*) and email (.*)$")
 	public void the_user_enters_name_Rafale_and_email_rafael_prueba_com(String name, String email) {
 	    // Write code here that turns the phrase above into concrete actions
+		System.out.println("Primer Segundo paso");
 		theActorCalled(nombreActor).attemptsTo(FormTask.sendForm(name, email));
 	    
 	}
